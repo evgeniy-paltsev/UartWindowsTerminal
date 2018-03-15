@@ -51,7 +51,6 @@ namespace ConsoleApplication1
 		
         public static void WriteUART()
         {
-            string buf;
             while (true)
             {
                 try
@@ -73,6 +72,7 @@ namespace ConsoleApplication1
 			stringForChange = stringForChange.Replace(@"\r", "\r");
 			stringForChange = stringForChange.Replace(@"\0", "\0");
 			stringForChange = stringForChange.Replace(@"\t", "\t");
+			return stringForChange;
 		}
 		
         static void Main(string[] args)
